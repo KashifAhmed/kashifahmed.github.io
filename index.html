@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kashif Ahmed</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+		@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css');
+
+		h1 {
+			position: absolute;
+			top: 0;
+			left: 20px;
+		}
+
+		.connect-links {
+			position: absolute;
+			bottom: 20px;
+			right: 20px;
+		}
+
+		i {
+			color: #fff;
+			cursor: pointer;
+		}
+
+		i:hover {
+			cursor: pointer;
+		}
+
+		a {
+			font-weight: bold;
+			color: #fff;
+			cursor: pointer;
+		}
+
+		.terminal {
+			list-style: none;
+			margin-bottom: 3em;
+			padding-left: 1.1rem;
+		}
+
+		.terminal li,
+		.terminal ul {
+			margin-top: 0.5rem;
+		}
+
+
+		body {
+			display: flex;
+			width: 100vw;
+			height: 100vh;
+			align-items: center;
+			justify-content: center;
+			margin: 0;
+			background: #131313;
+			color: #fff;
+			font-size: 20px;
+			font-family: 'Fira Mono', monospace;
+
+		}
+
+		li {
+			animation: glitch 1s linear infinite;
+		}
+
+		@keyframes glitch {
+
+			2%,
+			64% {
+				transform: translate(2px, 0) skew(0deg);
+			}
+
+			4%,
+			60% {
+				transform: translate(-2px, 0) skew(0deg);
+			}
+
+			62% {
+				transform: translate(0, 0) skew(5deg);
+			}
+		}
+
+		li:before,
+		li:after {
+			content: attr(title);
+			position: absolute;
+			left: 0;
+		}
+
+		li:before {
+			animation: glitchTop 1s linear infinite;
+			clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+			-webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+		}
+
+		@keyframes glitchTop {
+
+			2%,
+			64% {
+				transform: translate(2px, -2px);
+			}
+
+			4%,
+			60% {
+				transform: translate(-2px, 2px);
+			}
+
+			62% {
+				transform: translate(13px, -1px) skew(-13deg);
+			}
+		}
+
+		li:after {
+			animation: glitchBottom 1.5s linear infinite;
+			clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+			-webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+		}
+
+		@keyframes glitchBottom {
+
+			2%,
+			64% {
+				transform: translate(-2px, 0);
+			}
+
+			4%,
+			60% {
+				transform: translate(-2px, 0);
+			}
+
+			62% {
+				transform: translate(-22px, 5px) skew(21deg);
+			}
+		}
+	</style>
+</head>
+
+<body>
+	
+	<h1>Kashif Ahmed</h1>
+	<ul class="terminal">
+		<li>I am currently working with education base startup QUENO as CTO. </li>
+		<li>I Co-founded a service base company (Capazyte) where we was providing solutions to startups and mostly work
+			with US based startups. </li>
+		<li>I love to connect with other people to create and more impactful solutions. </li>
+		<li>Now a days I am trying to write technical blogs. </li>
+		<li>My email <a class="pointer" href="mailto:kashif91ahmed@gmail.com?Subject=Hi"
+				target="_top">kashif91ahmed@gmail.com</a></li>
+	</ul>
+	
+	<div class="connect-links">
+		<a href="http://www.linkedin.com/in/kashif91ahmed" class="social-icon pointer" target="_blank"> <i class="fa fa-linkedin"></i></a>
+		<a href="http://www.github.com/kashifahmed" class="social-icon pointer" target="_blank"> <i class="fa fa-github"></i></a>
+		<a href="http://www.fb.com/kashif91ahmed" class="social-icon pointer" target="_blank"> <i class="fa fa-facebook"></i></a>
+		<a href="http://www.twitter.com/kashifahmedpk" class="social-icon pointer" target="_blank"> <i class="fa fa-twitter"></i></a>
+	</div>
+
+</body>
+
+</html>
